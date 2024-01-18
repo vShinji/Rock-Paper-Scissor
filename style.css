@@ -44,6 +44,30 @@ body {
   justify-content: space-between;
 }
 
+.opt-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.opt-img:hover {
+  opacity: 1;
+}
+
+.opt-img.active {
+  opacity: 1;
+}
+
+.opt-img p{
+  color: #0F0F0F;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
 .opt-img img{
   width: 50px;
 }
